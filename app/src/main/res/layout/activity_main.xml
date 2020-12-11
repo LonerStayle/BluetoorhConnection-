@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="블루투스 사용화면"
+        app:layout_constraintEnd_toEndOf="@+id/btn_onOff"
+        app:layout_constraintStart_toStartOf="@+id/btn_onOff"
+        app:layout_constraintTop_toBottomOf="@+id/btn_onOff" />
+
+    <Button
+        android:id="@+id/btn_onOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_onOff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_gotoTheSample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="샘플로이동"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sub"
+        app:layout_constraintStart_toStartOf="@+id/btn_sub"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sub" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
